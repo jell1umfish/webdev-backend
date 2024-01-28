@@ -1,0 +1,27 @@
+body {
+    background-color: hsl(196, 99%, 30%);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .center {
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  #header {
+    font-family: 'Righteous', sans-serif;
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-family: 'Righteous', sans-serif;
+  }
+  
+  .book-list {
+    margin-top: 5px;
+    visibility: hidden;
+  }
+  
