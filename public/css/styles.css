@@ -1,5 +1,8 @@
+*{
+  font-family: "Righteous", sans-serif;
+}
+
 body {
-    background-color: hsl(196, 99%, 30%);
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +13,43 @@ body {
     margin: auto;
     margin-top: 20px;
   }
+
+  .header .header-1{
+    background-color: hsl(152, 46%, 24%);
+    padding:1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
+  .header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:black;
+  }
+
+  .header .header-1 .logo i{
+    color:rgb(255, 255, 255);
+  }
+
+  .header .header-1 .logo i:hover{
+    color:black;
+  }
+
+  .header .header-1 .icons a,
+  .header .header-1 .icons div{
+    color:rgb(255, 255, 255);
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .header .header-1 .icons a:hover,
+  .header .header-1 .icons div:hover{
+    color:black
+  }
+
   #header {
     font-family: 'Righteous', sans-serif;
     font-size: 3rem;
@@ -24,4 +63,5 @@ body {
     margin-top: 5px;
     visibility: hidden;
   }
+  
   

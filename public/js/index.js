@@ -118,7 +118,7 @@ function signup(e){
   var user = {
     email: email,
     username: username,
-    password: pass,
+    password: pass
   };
 
   var json = JSON.stringify(user);
@@ -148,4 +148,12 @@ function loginFunc(e){
   else{
     result.innerHTML = 'wrong password';
   }
+}
+function greating(e){
+  event.preventDefault();
+  var username = document.getElementById('username').value;
+  var user = localStorage.getItem(username);
+  var data = JSON.parse(user);
+  console.log(data.username);
+  alert(data.username + "Hello!");
 }
