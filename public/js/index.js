@@ -15,7 +15,7 @@ $(document).ready(function() {
        if(searchData === "" || searchData === null) {
          displayError();
        }
-      else {
+      else {  
          // console.log(searchData);
          // $.get("https://www.googleapis.com/books/v1/volumes?q="+searchData, getBookData()});
          $.ajax({
@@ -61,7 +61,7 @@ $(document).ready(function() {
           bookLink2 = item2.volumeInfo.previewLink;
           bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier
           bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
-  
+          application.set
           // in production code, item.text should have the HTML entities escaped.
           outputList.innerHTML += '<div class="row mt-4">' +
                                   formatOutput(bookImg1, title1, author1, publisher1, bookLink1, bookIsbn) +
